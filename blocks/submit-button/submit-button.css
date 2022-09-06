@@ -1,11 +1,14 @@
 .submit-button {
+    border: 0;
     width: 358px;
     height: 50px;
     background: #000000;
     border-radius: 2px;
     cursor: pointer;
-    margin-top: 48px;
-    margin-bottom: 37px;
+    margin: 48px 36px 37px 36px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.22;
 }
 
 .submit-button:hover {
@@ -16,7 +19,8 @@
     .submit-button {
         width: 238px;
         height: 46px;
-        margin-top: 45px;
-        margin-bottom: 25px;
+        margin: 45px 22px 25px 22px;
+        font-size: 14px;
+        line-height: 1.21;
     }
 }

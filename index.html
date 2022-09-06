@@ -10,30 +10,8 @@
 </head>
 <body class="body">
     <div class="page">
-        <div class="popup">
-            <form class="popup__container">
-                <h2 class="popup__heading">Редактировать профиль</h2>
-                <fieldset class="popup__input">
-                        <div class="popup__form">
-                            <input class="popup__item" type="text" placeholder="Жак-Ив Кусто">
-                            <div class="popup__line"></div>
-                        </div>
-                        <div class="popup__form">
-                            <input class="popup__item" type="text" placeholder="Исследователь океана">
-                            <div class="popup__line"></div>
-                        </div>
-                </fieldset>
-                <fieldset class="popup__input">
-                    <button type="button" class="submit-button">
-                        <span class="submit-button__text">Сохранить</span>
-                    </button>
-                </fieldset>
-                <button class="close-button"></button>
-            </form>
-        </div>
         <header class="header page__section">
             <img class="header__logo" src="images/logo.svg" alt="Логотип">
-            <div class="header__line"></div>
         </header>
         <main class="content page__section">
             <section class="profile">
@@ -51,42 +29,42 @@
                 <div class="element">
                     <img class="element__image" src="images/karach.jpg" alt="картинка">
                     <div class="element__flex">
-                        <p class="element__text">Карачаевск</p>
+                        <h2 class="element__text">Карачаевск</h2>
                         <button type="button" class="button-like"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img class="element__image" src="images/elb.png" alt="картинка">
                     <div class="element__flex">
-                        <p class="element__text">Гора Эльбрус</p>
+                        <h2 class="element__text">Гора Эльбрус</h2>
                         <button type="button" class="button-like"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img class="element__image" src="images/domb.png" alt="картинка">
                     <div class="element__flex">
-                        <p class="element__text">Домбай</p>
+                        <h2 class="element__text">Домбай</h2>
                         <button type="button" class="button-like"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img class="element__image" src="images/elb.png" alt="картинка">
                     <div class="element__flex">
-                        <p class="element__text">Гора Эльбрус</p>
+                        <h2 class="element__text">Гора Эльбрус</h2>
                         <button type="button" class="button-like"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img class="element__image" src="images/domb.png" alt="картинка">
                     <div class="element__flex">
-                        <p class="element__text">Домбай</p>
+                        <h2 class="element__text">Домбай</h2>
                         <button type="button" class="button-like"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img class="element__image" src="images/karach.jpg" alt="картинка">
                     <div class="element__flex">
-                        <p class="element__text">Карачаево-Черкессия</p>
+                        <h2 class="element__text">Карачаево-Черкессия</h2>
                         <button type="button" class="button-like"></button>
                     </div>
                 </div>
@@ -95,6 +73,19 @@
         <footer class="footer page__section">
             <p class="footer__copyright">© 2020 Mesto Russia</p>
         </footer>
+        <div class="popup">
+            <div class="popup__container">
+                <h2 class="popup__heading">Редактировать профиль</h2>
+                <form action="" name="редактированиеПрофиля">
+                    <fieldset class="popup__input">
+                        <input name="name" id="name" class="popup__item" type="text" placeholder="Имя">
+                        <input name="information" id="information" class="popup__item" type="text" placeholder="О себе">
+                    </fieldset>
+                    <button class="submit-button">Сохранить</button>
+                    <button type="button" class="close-button"></button>         
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

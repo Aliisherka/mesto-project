@@ -1,9 +1,9 @@
 .popup__item {
     border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);;
     padding: 0;
-    width: 100%;
-    height: 14px;
-
+    width: 358px;
+    height: 26px;
 }
 
 .popup__item::placeholder {
@@ -11,4 +11,10 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.21;
+}
+
+@media screen and (max-width: 767px) {
+    .popup__item {
+        width: 238px;
+    }
 }
