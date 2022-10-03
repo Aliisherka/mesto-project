@@ -26,54 +26,13 @@
                 <button type="button" class="add-button"></button>
             </section>
             <section class="elements">
-                <div class="element">
-                    <img class="element__image" src="images/karach.jpg" alt="картинка">
-                    <div class="element__flex">
-                        <h2 class="element__text">Карачаевск</h2>
-                        <button type="button" class="button-like"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img class="element__image" src="images/elb.png" alt="картинка">
-                    <div class="element__flex">
-                        <h2 class="element__text">Гора Эльбрус</h2>
-                        <button type="button" class="button-like"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img class="element__image" src="images/domb.png" alt="картинка">
-                    <div class="element__flex">
-                        <h2 class="element__text">Домбай</h2>
-                        <button type="button" class="button-like"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img class="element__image" src="images/elb.png" alt="картинка">
-                    <div class="element__flex">
-                        <h2 class="element__text">Гора Эльбрус</h2>
-                        <button type="button" class="button-like"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img class="element__image" src="images/domb.png" alt="картинка">
-                    <div class="element__flex">
-                        <h2 class="element__text">Домбай</h2>
-                        <button type="button" class="button-like"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img class="element__image" src="images/karach.jpg" alt="картинка">
-                    <div class="element__flex">
-                        <h2 class="element__text">Карачаево-Черкессия</h2>
-                        <button type="button" class="button-like"></button>
-                    </div>
-                </div>
             </section>
         </main>
         <footer class="footer page__section">
             <p class="footer__copyright">© 2020 Mesto Russia</p>
         </footer>
-        <div class="popup">
+
+        <div class="popup" id="edit-profile">
             <div class="popup__container">
                 <h2 class="popup__heading">Редактировать профиль</h2>
                 <form name="editProfile" class="form">
@@ -86,6 +45,41 @@
                 </form>
             </div>
         </div>
+
+        <div class="popup" id="add-place">
+            <div class="popup__container">
+                <h2 class="popup__heading">Новое место</h2>
+                <form name="editProfile" class="form" id="form-add">
+                    <fieldset class="popup__input">
+                        <input name="placeName" id="placeName" class="popup__item" type="text" placeholder="Название">
+                        <input name="link" id="link" class="popup__item" type="text" placeholder="Ссылка на картинку">
+                    </fieldset>
+                    <button type="submit" class="submit-button">Сохранить</button>
+                    <button type="button" class="close-button" id="closeButton"></button>         
+                </form>
+            </div>
+        </div>
+
+        <div class="popup" id="open-image">
+            <div class="popup__content">
+                <img class="popup__image" alt="" id="image-popup">
+                <p class="popup__text" id="textImage-popup"></p>
+                <button type="button" class="close-button" id="close-image"></button>  
+            </div>
+        </div>
     </div>
+
+    <template id="elementTemplate">
+        <div class="element">
+            <img class="element__image" alt="картинка">
+            <div class="element__flex">
+                <h2 class="element__text"></h2>
+                <button type="button" class="button-like"></button>
+            </div>
+            <button type="button" class="trash-button"></button>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
 </body>
 </html>
