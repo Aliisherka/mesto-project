@@ -17,6 +17,7 @@
 @import url(../blocks/popup/__text/popup__text.css);
 
 @import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/_color/popup_color_black.css);
 
 @import url(../blocks/submit-button/submit-button.css);
 
