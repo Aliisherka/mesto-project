@@ -1,0 +1,42 @@
+{
+  "name": "mesto-project",
+  "version": "1.0.0",
+  "description": "### Описание проекта и использованные методы - В проекте задействованны формы, которые можно заполнять, а в дальнейшем и посылать на сервер - Все интерактивные элементы обладают состоянием наведения или фокуса  - В проекте есть Попап редактирования профиля, который открывается при добавлении модификатора popup_opened и закрывается при его удалении, в дальнейшем, при помощи Js оно будет всплывать при нажатии - Использованы флексы и гриды - Использована адаптивная верстка",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aliisherka/mesto-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aliisherka/mesto-project/issues"
+  },
+  "homepage": "https://github.com/Aliisherka/mesto-project#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.2",
+    "cssnano": "^5.1.14",
+    "gh-pages": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.0",
+    "postcss-loader": "^7.0.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "core-js": "^3.26.1"
+  }
+}
