@@ -1,7 +1,13 @@
 import './pages/index.css';
 
 import { enableValidation } from './components/validate.js'
-enableValidation();
+enableValidation({
+  formSelector: '.form',
+  inputSelector: '.popup__item',
+  submitButtonSelector: '.submit-button',
+  inputErrorClass: 'popup__item_type_error',
+  inactiveButtonClass: 'submit-button_type_error'
+});
 
 import { openPopup, closePopup } from './components/modal.js'
 
